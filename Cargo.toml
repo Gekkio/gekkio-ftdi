@@ -1,0 +1,16 @@
+[package]
+name = "gekkio-ftdi"
+version = "0.0.0"
+authors = ["Joonas Javanainen <joonas.javanainen@gmail.com>"]
+edition = "2018"
+license = "MIT/Apache-2.0"
+
+[dependencies]
+bitflags = "1.0"
+gekkio-ftdi-sys = { version = "0.0.0", path = "sys" }
+
+[workspace]
+members = [
+  "bindgen",
+  "sys"
+]
