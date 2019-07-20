@@ -119,7 +119,7 @@ impl Context {
             _ => Ok(()),
         }
     }
-    fn raw_mut(&mut self) -> &mut sys::ftdi_context {
+    pub fn raw_mut(&mut self) -> *mut sys::ftdi_context {
         self.0.borrow_mut()
     }
 }
